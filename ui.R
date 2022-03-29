@@ -11,7 +11,7 @@ shinyUI(
     titlePanel(title=div(img(src="logo.png",align='right'),"Decision Tree App")),
     
     sidebarLayout(
-      
+      deci
       sidebarPanel(
         # Upload data:
         h4(p(" Data Input")),
@@ -88,7 +88,7 @@ shinyUI(
                              # h4('Visualize cross-validation results'),
                              # plotOutput("plot1",height = 600, width = 850),
                              # h4('Regression Tree'),
-                             visNetwork::visNetworkOutput("plot3",height = 600, width = 850),
+                             visNetwork::visNetworkOutput("plot3",height = 1200, width = 1700),
                              hr(),
                              h4('Detailed summary of splits'),
                              verbatimTextOutput("mod_sum"),
