@@ -332,7 +332,7 @@ shinyServer(function(input, output,session) {
     if (is.null(input$file)) {return(NULL)}
     
     
-    visTree(fit.rt()$model, main = paste("Decision Tree for", input$yAttr), width = "150%")
+    visTree(fit.rt()$model, main = paste("Decision Tree for", input$yAttr), width = "100%", nodesFontSize = 10, edgesFontSize = 10)
     
     
     
